@@ -10,36 +10,6 @@ To use the `QayhamBottomsheetComponent` in your Angular project, follow these st
    ```bash
    npm i qayham-bottomsheet
    ```
-2. **Import in Root**
-
-   ```ts
-   import { QayhamBottomsheetComponent } from "your-library-name";
-   @NgModule({
-     declarations: [
-       // other components
-     ],
-     imports: [
-       CommonModule,
-       QayhamBottomsheetComponent, // Add the bottom sheet component here
-     ],
-     exports: [
-       QayhamBottomsheetComponent, // Export it if needed
-     ],
-   })
-   export class YourModule {}
-   ```
-
-3. **Usage**
-
-```html
-<qayham-bottomsheet [open]="isBottomSheetOpen" (closed)="onBottomSheetClosed()">
-  <div>
-    <!-- Your content goes here -->
-    <h2>Bottom Sheet Content</h2>
-    <p>This is an example of content inside the bottom sheet.</p>
-  </div>
-</qayham-bottomsheet>
-```
 
 ## Component Properties
 

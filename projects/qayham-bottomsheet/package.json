@@ -1,6 +1,6 @@
 {
   "name": "qayham-bottomsheet",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "keywords": [
     "Bottom sheet",
     "Modal",
@@ -10,6 +10,7 @@
     "Bottom drawer",
     "Popup"
   ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^19.2.0",
     "@angular/core": "^19.2.0"
