@@ -3,5 +3,53 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "qayham-bottomsheet": {
+      "projectType": "library",
+      "root": "projects/qayham-bottomsheet",
+      "sourceRoot": "projects/qayham-bottomsheet/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/qayham-bottomsheet/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/qayham-bottomsheet/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/qayham-bottomsheet/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/qayham-bottomsheet/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/qayham-bottomsheet/**/*.ts",
+              "projects/qayham-bottomsheet/**/*.html"
+            ],
+            "eslintConfig": "projects/qayham-bottomsheet/eslint.config.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "schematicCollections": [
+      "angular-eslint"
+    ]
   }
 }
