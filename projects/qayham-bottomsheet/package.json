@@ -1,6 +1,6 @@
 {
   "name": "qayham-bottomsheet",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "keywords": [
     "Bottom sheet",
     "Modal",
@@ -10,6 +10,11 @@
     "Bottom drawer",
     "Popup"
   ],
+  "author": {
+    "name": "Bilal Ahmad Parray",
+    "email": "parraybilal34@gmail.com",
+    "url": "https://github.com/bilalparray"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^19.2.0",

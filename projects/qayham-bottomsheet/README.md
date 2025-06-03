@@ -6,7 +6,7 @@ The `QayhamBottomsheetComponent` is an Angular component that provides a customi
 
 To use the `QayhamBottomsheetComponent` in your Angular project, follow these steps:
 
-1. **Install the library** (assuming you have published it to npm):
+1. **Install the library**
    ```bash
    npm i qayham-bottomsheet
    ```
