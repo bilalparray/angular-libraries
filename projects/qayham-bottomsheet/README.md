@@ -54,19 +54,19 @@ To use the `QayhamBottomsheetComponent` in your Angular project, follow these st
 Here’s an example of how to use the `QayhamBottomsheetComponent` in a parent component:
 
 ```typescript
-import { Component } from '@angular/core';
-
+import { QayhamBottomsheetComponent } from 'qayham-bottomsheet';
 @Component({
   selector: 'app-example',
-  import:[QayhamBottomsheet]
+  import:[QayhamBottomsheetComponent]
   template: `
-    <button (click)="toggleBottomSheet()">Toggle Bottom Sheet</button>
-    <qayham-bottomsheet [open]="isBottomSheetOpen" (closed)="onBottomSheetClosed()">
-      <div>
+   <button (click)="isBottomSheetOpen = true">Open Bottom Sheet</button>
+<qayham-bottomsheet [open]="isBottomSheetOpen" (closed)="onBottomSheetClosed()">
+    <div>
+        <!-- Your content goes here -->
         <h2>Bottom Sheet Content</h2>
         <p>This is an example of content inside the bottom sheet.</p>
-      </div>
-    </qayham-bottomsheet>
+    </div>
+</qayham-bottomsheet>
   `
 })
 export class ExampleComponent {

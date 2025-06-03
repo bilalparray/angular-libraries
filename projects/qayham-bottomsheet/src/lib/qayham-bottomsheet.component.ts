@@ -55,8 +55,8 @@ import { NavigationStart, Router } from '@angular/router';
         right: 0;
         bottom: 0;
         max-height: 50vh; /* Limit the sheet's overall height */
-        background: var(--primary-color);
-        color: var(--primary-text-color);
+        background: white;
+        color: black;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
